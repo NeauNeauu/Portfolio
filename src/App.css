@@ -17,13 +17,13 @@
 /* Header */
 header {
   width: 100%;
-  background-color:   rgb(121, 121, 121);
+  background-color:   rgb(108, 108, 108);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 25px;
-  height: 280px;
-  border-radius: 0 0 40px 10px;
+  height: 250px;
+  border-radius: 0 0 30px 30px;
 }
 
 header .left {
@@ -38,16 +38,18 @@ header .left img {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 1px 1px 3px rgb(81, 81, 81);
   transition: 1000ms;
+  box-shadow: 5px 5px 10px rgb(81, 81, 81);
+
 }
 
 header .left img:hover {
   transform: scale(1.15) rotate(360deg);
   transition: 1500ms;
+  box-shadow: 10px 10px 10px rgb(81, 81, 81);
+
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 1px 1px 3px rgb(81, 81, 81);
 }
 
 header .left .user-infos {
@@ -73,13 +75,43 @@ header .left .user-infos .socials .icon .contact-item {
   font-size: 25px;
   box-shadow: 1px 1px  3px rgb(81, 81, 81);
   transition: 200ms;
+  box-shadow: 0px 0px 2px rgb(0, 0, 0);
   cursor: pointer
 }
+
 header .left .user-infos .socials .icon .contact-item:hover {
   background-color:   rgb(81, 81, 81);
   color: rgb(156, 183, 251);
+  box-shadow: 0px 0px 5px rgb(156, 183, 251);
   border-radius: 40%;
   transition: 200ms;
 }
 
+header .left .user-infos .socials .icon .contact-item:active {
+  transform: scale(0.9);
+  transition: 200ms;
+}
 
+/* Contact btn */
+header .right .contact-btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgb(51, 51, 51);
+  color: aliceblue;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  transition: 200ms;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+header .right .contact-btn:hover {
+  background-color: rgb(81, 81, 81);
+}
+
+header .right .contact-btn:active {
+  transform: scale(0.9);
+}
