@@ -17,7 +17,7 @@
 /* Header */
 header {
   width: 100%;
-  background-color:   rgb(108, 108, 108);
+  background-color:   rgb(80, 80, 80);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,9 +73,8 @@ header .left .user-infos .socials .icon .contact-item {
   background-color:   rgb(51, 51, 51);
   border-radius: 50%;
   font-size: 25px;
-  box-shadow: 1px 1px  3px rgb(81, 81, 81);
   transition: 200ms;
-  box-shadow: 0px 0px 2px rgb(0, 0, 0);
+  box-shadow: 0px 0px 1px 0px rgb(0, 0, 0);
   cursor: pointer
 }
 
@@ -114,4 +113,28 @@ header .right .contact-btn:hover {
 
 header .right .contact-btn:active {
   transform: scale(0.9);
+}
+
+/* Body Container */
+.main .body-container {
+  width: 100%;
+  padding: 70px 100px;
+  display: flex;
+}
+
+.main .body-container .left {
+  width: 70%;
+}
+
+.main .body-container .left .about-me {
+  background-color:   rgb(81, 81, 81);
+  color: rgb(246, 251, 255);
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+
+.main .body-container .left .about-me h2 {
+  font-size: 30px;
+  text-shadow: 0px 0px 5px rgb(156, 183, 251);
+  margin-bottom: 20px;
 }
