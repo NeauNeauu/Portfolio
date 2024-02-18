@@ -2,12 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logoreload.png" id="logo" />
+    <link rel="icon" type="image/svg+xml" href="epi.png" id="logo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noah's Portfolio</title>
   </head>
   <body>
-    <div id="root"></div>
+    <nav>
+      <div class="nav-logo">
+        <a href="#">
+          <img src="epiW.png"/>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li class="link"><a href="3">Home</a></li>
+        <li class="link"><a href="3">About Me</a></li>
+        <li class="link"><a href="3">Projetcs</a></li>
+        <li class="link"><a href="3">Contact</a></li>
+      </ul>
+      <button class="btn">Contact Me</button>
+    </nav>
+
+    <header class="container">
+      <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h4>ABOUT ME</h4>
+        <H1>Hello, I'm <span>Noah</span>, first year Epitech student</H1>
+        <p>
+          I am a first year student at Epitech, a computer science school. I am
+          passionate about web development and I am currently learning React.js
+          and HTML\CSS. I am also interested in devOps and I am currently
+          learning C and python. I am looking for an internship to improve my skills and learn new ones.
+        </p>
+        <button class="btn">Learn More</button>
+      </div>
+      <div class="image">
+        <img src="src/assets/images/dev.png" />
+      </div>
+    </header>
+    <section class="container">
+      <h2 class="header">MY PROJECTS</h2>
+      <div class="projects">
+        <div class="card">
+          <img src="src/assets/images/navy.png" />
+          <h3>Navy</h3>
+          <p>
+            Navy is a battleship game made in C (SFML). It is a two player game where
+            each player has to place their ships on a map and then try to sink
+            the other player's ships.
+          </p>
+          <a href="https://github.com/NeauNeauu" target="_blank">Take a look</a>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
